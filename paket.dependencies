@@ -1,0 +1,22 @@
+source http://nuget.org/api/v2
+source http://www.myget.org/F/freya/api/v2
+
+nuget Aether            ~> 8.1
+nuget Freya.Core        ~> 4.0.0-b
+
+group Build
+
+  source http://nuget.org/api/v2
+
+  nuget Fake
+  github xyncro/build build.fsx
+
+group Test
+
+  framework: >= net45
+  source http://nuget.org/api/v2
+
+  nuget Unquote
+  nuget xunit
+  nuget xunit.runner.console
+

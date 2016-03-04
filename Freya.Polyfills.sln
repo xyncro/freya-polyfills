@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{AADC045B-2111-4CFE-9CF6-B43A95677BC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{CF6A3D21-F732-4805-8252-57231CBC62C9}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{72F7D790-5501-4619-A23F-8F3481C6CDD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{502359A8-0CB6-4FBE-BB7B-AD3A3854B03C}"
+	ProjectSection(SolutionItems) = preProject
+		src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.references = src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.references
+		src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.references = src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.references
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills", "src\Freya.Polyfills\Freya.Polyfills.fsproj", "{C6E2E546-5299-495C-B3FA-993E9268D6E5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Katana", "src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj", "{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF6A3D21-F732-4805-8252-57231CBC62C9} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
+		{502359A8-0CB6-4FBE-BB7B-AD3A3854B03C} = {CF6A3D21-F732-4805-8252-57231CBC62C9}
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
+	EndGlobalSection
+EndGlobal
