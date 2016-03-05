@@ -23,6 +23,19 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills", "src\Frey
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Katana", "src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj", "{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{E0541B8F-79D7-4D95-B6AC-CC8D4919F7E2}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{EB149E6A-70EA-455E-BAB4-3151588BE84C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A8AE48C-B73C-4B15-AB72-016530BB35C2}"
+	ProjectSection(SolutionItems) = preProject
+		src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template = src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template
+		src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template = src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,5 +59,8 @@ Global
 		{502359A8-0CB6-4FBE-BB7B-AD3A3854B03C} = {CF6A3D21-F732-4805-8252-57231CBC62C9}
 		{C6E2E546-5299-495C-B3FA-993E9268D6E5} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
 		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
+		{E0541B8F-79D7-4D95-B6AC-CC8D4919F7E2} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
+		{EB149E6A-70EA-455E-BAB4-3151588BE84C} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
+		{1A8AE48C-B73C-4B15-AB72-016530BB35C2} = {EB149E6A-70EA-455E-BAB4-3151588BE84C}
 	EndGlobalSection
 EndGlobal
