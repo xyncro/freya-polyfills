@@ -11,11 +11,11 @@ GROUP Build
 NUGET
   remote: http://www.nuget.org/api/v2
   specs:
-    FAKE (4.21.3)
+    FAKE (4.21.4)
 GITHUB
   remote: xyncro/build
   specs:
-    build.fsx (1407924c1087499b7e553ee1270de91844c98c2a)
+    build.fsx (4385349a664f318032f12242af8b47d14ef47c88)
 GROUP Test
 FRAMEWORK: >= NET45
 NUGET
