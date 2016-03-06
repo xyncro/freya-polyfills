@@ -15,7 +15,7 @@ NUGET
 GITHUB
   remote: xyncro/build
   specs:
-    build.fsx (4385349a664f318032f12242af8b47d14ef47c88)
+    build.fsx (589ed49e68b51d7de9e9de9be1adc30e26ce534d)
 GROUP Test
 FRAMEWORK: >= NET45
 NUGET
