@@ -1,8 +1,10 @@
-source http://nuget.org/api/v2
-source http://www.myget.org/F/freya/api/v2
+source https://nuget.org/api/v2
+source https://www.myget.org/F/freya/api/v2
+source https://www.myget.org/F/aspnetvnext/api/v3/index.json
 
-nuget Aether            ~> 8.1
-nuget Freya.Core        ~> 4.0.0-b
+nuget Aether                              ~> 8.1
+nuget Freya.Core                          ~> 4.0.0-b
+nuget Microsoft.AspNetCore.Server.Kestrel ~> 1.0.0-rc2
 
 group Build
 
