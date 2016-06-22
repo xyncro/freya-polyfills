@@ -16,7 +16,7 @@ let main args =
     try
         WebHostBuilder()
             .UseKestrel()
-            .UseUrls([| "http://localhost:7000" |])
+            //.UseUrls([| "http://localhost:7000" |])
             //.UseContentRoot(Directory.GetCurrentDirectory())
             //.UseDefaultHostingConfiguration(args)
             .UseStartup<Startup>()

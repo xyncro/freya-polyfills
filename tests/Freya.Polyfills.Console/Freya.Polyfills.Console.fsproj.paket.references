@@ -1,2 +1,5 @@
 ﻿Freya.Core
-Microsoft.AspNetCore.Server.Kestrel
+
+group Test
+
+  Microsoft.AspNetCore.Server.Kestrel
