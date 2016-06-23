@@ -13,7 +13,7 @@ let private httpListener_ =
 
 let private httpListener =
         !. httpListener_
-    >>= function | Some x -> Request.rawPathAndQuery_ .= Some x.Request.RawUrl
+    >>= function | Some x -> Request.pathRaw_ .= Some (PathAndQuery.path x.Request.RawUrl)
                  | _ -> Freya.empty
 
 (* HttpContext *)
@@ -23,7 +23,7 @@ let private httpContext_ =
 
 let private httpContext =
         !. httpContext_
-    >>= function | Some x -> Request.rawPathAndQuery_ .= Some x.Request.Url.PathAndQuery
+    >>= function | Some x -> Request.pathRaw_ .= Some (PathAndQuery.path x.Request.Url.PathAndQuery)
                  | _ -> Freya.empty
 
 (* Polyfill *)

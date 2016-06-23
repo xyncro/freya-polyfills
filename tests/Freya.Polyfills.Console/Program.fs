@@ -7,7 +7,7 @@ open Microsoft.AspNetCore.Hosting
 type Startup() =
     member __.Configure (app: IApplicationBuilder) =
         app.Run (fun x ->
-            printfn "%A - %A - %A - %A" x.Request.Method x.Request.PathBase x.Request.Path x.Request.QueryString
+            printfn "%A - %A - %A - %A" x.Request.Method x.Request.PathBase (string x.Request.Path) x.Request.QueryString
             x.Response.WriteAsync("Hello world"))
 
 [<EntryPoint>]

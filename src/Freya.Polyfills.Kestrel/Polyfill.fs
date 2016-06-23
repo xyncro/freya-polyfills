@@ -12,7 +12,7 @@ let private httpContext_ =
 
 let private httpContext =
         !. httpContext_
-    >>= function | Some x -> Request.rawPathAndQuery_ .= Some "" // x.Request.
+    >>= function | Some x -> Request.pathRaw_ .= Some (PathAndQuery.path (string x.Request.Path))
                  | _ -> Freya.empty
 
 (* Polyfill *)

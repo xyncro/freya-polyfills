@@ -35,6 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A8AE48C-B73
 	ProjectSection(SolutionItems) = preProject
 		src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template = src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template
 		src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template = src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template
+		src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj.paket.template = src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj.paket.template
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Kestrel", "src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj", "{A18D8D55-D05D-4793-8D27-7F7A306600D4}"
