@@ -1,4 +1,6 @@
-﻿Freya.Core
+﻿group Async
+
+  Freya.Core
 
 group Test
 

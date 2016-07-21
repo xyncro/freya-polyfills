@@ -1,16 +1,37 @@
-source https://nuget.org/api/v2
-source https://www.myget.org/F/freya/api/v2
+// Code
 
-nuget Aether                    ~> 8.1
-nuget Freya.Core                ~> 3.0.0-b
-nuget Microsoft.AspNetCore.Http ~> 1.0.0-rc
+group Common
+
+  source https://nuget.org/api/v2
+
+  nuget Aether                    ~> 8.1
+  nuget Microsoft.AspNetCore.Http ~> 1.0.0-rc
+
+group Async
+
+  source https://nuget.org/api/v2
+  source https://www.myget.org/F/freya/api/v2
+
+  nuget Freya.Core ~> 3.0.0-rc
+
+group Hopac
+
+  source https://nuget.org/api/v2
+  source https://www.myget.org/F/freya/api/v2
+
+  nuget Freya.Core.Hopac ~> 3.0.0-rc
+
+// Build
 
 group Build
 
+  framework: >= net45
   source http://nuget.org/api/v2
 
   nuget Fake
   github xyncro/build build.fsx
+
+// Test
 
 group Test
 

@@ -1,0 +1,23 @@
+﻿type project
+id
+    Freya.Polyfills.Katana
+title
+    Freya.Polyfills.Katana
+description
+    Polyfill for Katana based server implementations (IIS and HttpListener)
+tags
+    functional, web, f#, freya, polyfills, OWIN, katana
+version
+    3.0.0-rc01
+owners
+    Andrew Cherry, Ryan Riley
+authors
+    Andrew Cherry, Ryan Riley
+copyright
+    Copyright Xyncro Ltd 2016
+projectUrl
+    https://xyncro.tech/freya
+licenseUrl
+    https://github.com/xyncro/freya-polyfills/blob/master/LICENSE.md
+requireLicenseAcceptance
+    false

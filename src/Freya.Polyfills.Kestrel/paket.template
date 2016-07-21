@@ -1,14 +1,14 @@
 ﻿type project
 id
-    Freya.Polyfills.Katana
+    Freya.Polyfills.Kestrel
 title
-    Freya.Polyfills.Katana
+    Freya.Polyfills.Kestrel
 description
-    Polyfill for Katana based server implementations (IIS and HttpListener)
+    Polyfill for Kestrel based server implementations
 tags
-    functional, web, f#, freya, polyfills, OWIN, katana
+    functional, web, f#, freya, polyfills, OWIN, kestrel
 version
-    3.0.0-b302
+    3.0.0-rc01
 owners
     Andrew Cherry, Ryan Riley
 authors

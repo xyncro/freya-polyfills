@@ -1,0 +1,23 @@
+﻿type project
+id
+    Freya.Polyfills
+title
+    Freya.Polyfills
+description
+    Polyfills for future/draft elements of the OWIN standards for various server implementations
+tags
+    functional, web, f#, freya, polyfills, OWIN
+version
+    3.0.0-rc01
+owners
+    Andrew Cherry, Ryan Riley
+authors
+    Andrew Cherry, Ryan Riley
+copyright
+    Copyright Xyncro Ltd 2016
+projectUrl
+    https://xyncro.tech/freya
+licenseUrl
+    https://github.com/xyncro/freya-polyfills/blob/master/LICENSE.md
+requireLicenseAcceptance
+    false
