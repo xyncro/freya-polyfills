@@ -7,7 +7,7 @@ open Microsoft.AspNetCore.Hosting
 type Startup() =
     member __.Configure (app: IApplicationBuilder) =
         app.Run (fun x ->
-            printfn "%A - %A - %A - %A" x.Request.Method x.Request.PathBase x.Request.Path x.Request.QueryString
+            printfn "%A - %A - %A - %A" x.Request.Method x.Request.PathBase (string x.Request.Path) x.Request.QueryString
             x.Response.WriteAsync("Hello world"))
 
 [<EntryPoint>]
@@ -16,7 +16,7 @@ let main args =
     try
         WebHostBuilder()
             .UseKestrel()
-            .UseUrls([| "http://localhost:7000" |])
+            //.UseUrls([| "http://localhost:7000" |])
             //.UseContentRoot(Directory.GetCurrentDirectory())
             //.UseDefaultHostingConfiguration(args)
             .UseStartup<Startup>()

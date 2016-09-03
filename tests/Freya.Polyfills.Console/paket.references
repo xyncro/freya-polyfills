@@ -1,0 +1,7 @@
+﻿group Async
+
+  Freya.Core
+
+group Test
+
+  Microsoft.AspNetCore.Server.Kestrel

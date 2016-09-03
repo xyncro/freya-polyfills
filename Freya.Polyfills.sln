@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{AADC045B-2111-4CFE-9CF6-B43A95677BC7}"
 EndProject
@@ -9,15 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencie
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
 		paket.lock = paket.lock
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{72F7D790-5501-4619-A23F-8F3481C6CDD5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{502359A8-0CB6-4FBE-BB7B-AD3A3854B03C}"
-	ProjectSection(SolutionItems) = preProject
-		src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.references = src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.references
-		src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.references = src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.references
-		src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj.paket.references = src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj.paket.references
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills", "src\Freya.Polyfills\Freya.Polyfills.fsproj", "{C6E2E546-5299-495C-B3FA-993E9268D6E5}"
@@ -29,24 +20,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{E0541B8F
 		build.cmd = build.cmd
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{EB149E6A-70EA-455E-BAB4-3151588BE84C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1A8AE48C-B73C-4B15-AB72-016530BB35C2}"
-	ProjectSection(SolutionItems) = preProject
-		src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template = src\Freya.Polyfills\Freya.Polyfills.fsproj.paket.template
-		src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template = src\Freya.Polyfills.Katana\Freya.Polyfills.Katana.fsproj.paket.template
-	EndProjectSection
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Kestrel", "src\Freya.Polyfills.Kestrel\Freya.Polyfills.Kestrel.fsproj", "{A18D8D55-D05D-4793-8D27-7F7A306600D4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D591AA8-995D-4287-81C3-38369EF38130}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Console", "tests\Freya.Polyfills.Console\Freya.Polyfills.Console.fsproj", "{626593FD-5DA3-4B63-96DB-DCDD713EA2E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{494D3DB9-246D-4C5C-88CB-4076D08C08CC}"
-	ProjectSection(SolutionItems) = preProject
-		tests\Freya.Polyfills.Console\Freya.Polyfills.Console.fsproj.paket.references = tests\Freya.Polyfills.Console\Freya.Polyfills.Console.fsproj.paket.references
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "variants", "variants", "{3F4A82B5-A769-4C58-A116-2016E5AE2469}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "async", "async", "{BD064F3F-D736-4C2A-B95F-E177A5CEC3F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hopac", "hopac", "{0CC7ED9C-C73F-482E-AE6F-C77B261C8520}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E31D3A9-C4C3-4B9D-B728-D6EACE2ACAAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B001D307-0768-4EB1-80F6-F0AD03A31EC4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Hopac", "src\Freya.Polyfills.Hopac\Freya.Polyfills.Hopac.fsproj", "{CF681F9B-C040-4190-8342-17C351B462FE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Katana.Hopac", "src\Freya.Polyfills.Katana.Hopac\Freya.Polyfills.Katana.Hopac.fsproj", "{1E0484AD-F8C1-46F4-8140-F37870F86110}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Freya.Polyfills.Kestrel.Hopac", "src\Freya.Polyfills.Kestrel.Hopac\Freya.Polyfills.Kestrel.Hopac.fsproj", "{C00BF03F-C13F-45B4-980B-E6B39E78DEC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,20 +64,36 @@ Global
 		{626593FD-5DA3-4B63-96DB-DCDD713EA2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626593FD-5DA3-4B63-96DB-DCDD713EA2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626593FD-5DA3-4B63-96DB-DCDD713EA2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF681F9B-C040-4190-8342-17C351B462FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF681F9B-C040-4190-8342-17C351B462FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF681F9B-C040-4190-8342-17C351B462FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF681F9B-C040-4190-8342-17C351B462FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0484AD-F8C1-46F4-8140-F37870F86110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0484AD-F8C1-46F4-8140-F37870F86110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0484AD-F8C1-46F4-8140-F37870F86110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0484AD-F8C1-46F4-8140-F37870F86110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00BF03F-C13F-45B4-980B-E6B39E78DEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00BF03F-C13F-45B4-980B-E6B39E78DEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00BF03F-C13F-45B4-980B-E6B39E78DEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00BF03F-C13F-45B4-980B-E6B39E78DEC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CF6A3D21-F732-4805-8252-57231CBC62C9} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
-		{502359A8-0CB6-4FBE-BB7B-AD3A3854B03C} = {CF6A3D21-F732-4805-8252-57231CBC62C9}
-		{C6E2E546-5299-495C-B3FA-993E9268D6E5} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
-		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
+		{C6E2E546-5299-495C-B3FA-993E9268D6E5} = {6E31D3A9-C4C3-4B9D-B728-D6EACE2ACAAD}
+		{6AC14E2A-E3CC-43D6-8051-3F5E5B8E7525} = {6E31D3A9-C4C3-4B9D-B728-D6EACE2ACAAD}
 		{E0541B8F-79D7-4D95-B6AC-CC8D4919F7E2} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
-		{EB149E6A-70EA-455E-BAB4-3151588BE84C} = {AADC045B-2111-4CFE-9CF6-B43A95677BC7}
-		{1A8AE48C-B73C-4B15-AB72-016530BB35C2} = {EB149E6A-70EA-455E-BAB4-3151588BE84C}
-		{A18D8D55-D05D-4793-8D27-7F7A306600D4} = {72F7D790-5501-4619-A23F-8F3481C6CDD5}
+		{A18D8D55-D05D-4793-8D27-7F7A306600D4} = {6E31D3A9-C4C3-4B9D-B728-D6EACE2ACAAD}
+		{6D591AA8-995D-4287-81C3-38369EF38130} = {BD064F3F-D736-4C2A-B95F-E177A5CEC3F7}
 		{626593FD-5DA3-4B63-96DB-DCDD713EA2E3} = {6D591AA8-995D-4287-81C3-38369EF38130}
-		{494D3DB9-246D-4C5C-88CB-4076D08C08CC} = {CF6A3D21-F732-4805-8252-57231CBC62C9}
+		{BD064F3F-D736-4C2A-B95F-E177A5CEC3F7} = {3F4A82B5-A769-4C58-A116-2016E5AE2469}
+		{0CC7ED9C-C73F-482E-AE6F-C77B261C8520} = {3F4A82B5-A769-4C58-A116-2016E5AE2469}
+		{6E31D3A9-C4C3-4B9D-B728-D6EACE2ACAAD} = {BD064F3F-D736-4C2A-B95F-E177A5CEC3F7}
+		{B001D307-0768-4EB1-80F6-F0AD03A31EC4} = {0CC7ED9C-C73F-482E-AE6F-C77B261C8520}
+		{CF681F9B-C040-4190-8342-17C351B462FE} = {B001D307-0768-4EB1-80F6-F0AD03A31EC4}
+		{1E0484AD-F8C1-46F4-8140-F37870F86110} = {B001D307-0768-4EB1-80F6-F0AD03A31EC4}
+		{C00BF03F-C13F-45B4-980B-E6B39E78DEC2} = {B001D307-0768-4EB1-80F6-F0AD03A31EC4}
 	EndGlobalSection
 EndGlobal
