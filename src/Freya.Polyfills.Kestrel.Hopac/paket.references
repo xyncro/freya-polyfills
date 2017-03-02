@@ -1,7 +1,0 @@
-﻿group Common
-
-  Microsoft.AspNetCore.Http
-
-group Hopac
-
-  Freya.Core.Hopac
