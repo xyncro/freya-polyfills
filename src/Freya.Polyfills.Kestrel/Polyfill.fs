@@ -14,7 +14,7 @@ module Optics =
 /// Retreives the Kestrel `HttpContext` object for the current request.
 let httpContext = Freya.Optic.get Optics.httpContext_
 
-/// Retreives a service held by the Kestrel `IServiceContainer`.
+/// Retreives a service held by the Kestrel `IServiceProvider`.
 ///
 /// *Optimization note*: define a static value which pre-applies the type of the
 /// service you wish to retreive rather than calling `requestService` from inside
@@ -42,7 +42,9 @@ module Polyfill =
     /// included as the first item in a pipeline composition of the Freya
     /// application to ensure that any data provided by the polyfill is
     /// available to any subsequent component.
-
+    ///
+    /// This polyfill is automatically provided when using the `UseFreya`
+    /// extension method.
     let kestrel =
             applyPolyfill
          *> Pipeline.next
