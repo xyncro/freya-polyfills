@@ -57,7 +57,7 @@ type ApplicationBuilderExtensions private () =
     /// Attaches a Freya middleware into an ASP.NET Core application pipeline.
     [<System.Runtime.CompilerServices.Extension>]
     static member UseFreya(app: IApplicationBuilder, freya: Freya<PipelineChoice>) =
-        let owin : OwinMidFunc = OwinMidFunc.ofFreya freya
+        let owin : OwinMidFunc = OwinMidFunc.ofFreya (Polyfill.kestrel *> freya)
         app.UseOwin(fun p -> p.Invoke owin)
 
     /// Builds a Freya middleware and attaches it into an ASP.NET Core application pipeline.
