@@ -1,4 +1,5 @@
-﻿module Freya.Polyfills.Kestrel
+﻿[<System.Runtime.CompilerServices.Extension>]
+module Freya.Polyfills.Kestrel
 
 open Freya.Core
 open Freya.Core.Operators
@@ -45,3 +46,26 @@ module Polyfill =
     let kestrel =
             applyPolyfill
          *> Pipeline.next
+
+open Microsoft.AspNetCore.Builder
+
+[<System.Runtime.CompilerServices.Extension>]
+[<Sealed>]
+[<AbstractClass>]
+type ApplicationBuilderExtensions private () =
+
+    /// Attaches a Freya middleware into an ASP.NET Core application pipeline.
+    [<System.Runtime.CompilerServices.Extension>]
+    static member UseFreya(app: IApplicationBuilder, freya: Freya<PipelineChoice>) =
+        let owin : OwinMidFunc = OwinMidFunc.ofFreya freya
+        app.UseOwin(fun p -> p.Invoke owin)
+
+    /// Builds a Freya middleware and attaches it into an ASP.NET Core application pipeline.
+    [<System.Runtime.CompilerServices.Extension>]
+    static member UseFreya(app: IApplicationBuilder, freyaBuider: System.Func<Freya<PipelineChoice>>) =
+        app.UseFreya(freyaBuider.Invoke())
+
+    /// Builds a Freya middleware and attaches it into an ASP.NET Core application pipeline.
+    [<System.Runtime.CompilerServices.Extension>]
+    static member UseFreya(app: IApplicationBuilder, freyaBuider: unit -> Freya<PipelineChoice>) =
+        app.UseFreya(freyaBuider())
