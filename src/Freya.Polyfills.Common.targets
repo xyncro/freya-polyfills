@@ -23,7 +23,8 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(Kestrel)' == 'true'">
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Owin" Version="1.1.2" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(Katana)' == 'true'">
