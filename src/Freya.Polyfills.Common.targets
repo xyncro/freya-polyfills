@@ -1,18 +1,11 @@
 <Project>
   <PropertyGroup>
-    <TargetFrameworks Condition="'$(Katana)' != 'true' and '$(Kestrel)' != 'true'">net45;netstandard1.6</TargetFrameworks>
+    <TargetFrameworks Condition="'$(Katana)' != 'true' and '$(Kestrel)' != 'true'">net45;netstandard2.0</TargetFrameworks>
     <TargetFrameworks Condition="'$(Katana)' == 'true'">net45</TargetFrameworks>
-    <TargetFrameworks Condition="'$(Kestrel)' == 'true'">net451;netstandard1.6</TargetFrameworks>
+    <TargetFrameworks Condition="'$(Kestrel)' == 'true'">net451;netstandard2.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DefineConstants Condition="'$(Hopac)' == 'true'">$(DefineConstants);HOPAC</DefineConstants>
   </PropertyGroup>
-
-  <Import Project="..\nuget.props" />
-
-  <ItemGroup>
-    <PackageReference Include="FSharp.NET.Sdk" Version="1.*" PrivateAssets="All" />
-    <PackageReference Include="FSharp.Core" Version="4.1.0" />
-  </ItemGroup>
 
   <ItemGroup Condition="'$(Hopac)' != 'true'">
     <PackageReference Include="Freya.Core" Version="[4.0.0-alpha-*,5)" />

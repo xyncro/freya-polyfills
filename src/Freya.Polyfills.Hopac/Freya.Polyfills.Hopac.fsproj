@@ -1,4 +1,4 @@
-<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Polyfills for future/draft elements of the OWIN standards for various server implementations</Description>
     <Hopac>true</Hopac>
